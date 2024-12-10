@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+    let movies = ["manam", "daddy", "janu"];
+    movies.push("joe", "three"); 
+
+//  for loop
+    console.log("Using for loop:");
+    for (let i = 0; i < movies.length; i++) {
+    console.log(movies[i]);
+      }
+
+//  for in loop 
+     console.log(" for in loop:");
+      for (let index in movies) {
+    console.log(movies[index]);
+    }
+
+//  for of loop 
+           console.log(" for of loop:");
+       for (let movie of movies) {
+         console.log(movie);
+        }
+
+    </script>
+</body>
+</html>

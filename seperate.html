@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+     let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, { name: "object" }];
+    let num = [];
+    let str = [];
+    let bool = [];
+     let obj = [];
+
+       for (let item of arr) {
+    if (typeof item === "number") {
+        num.push(item);
+    } 
+    
+    else if (typeof item === "string") {
+        str.push(item);
+    } 
+    else if (typeof item === "boolean") {
+        bool.push(item);
+    } 
+    else if (typeof item === "object") {
+        obj.push(item);
+    }
+  }
+
+       console.log("Separated arrays:");
+       console.log("num:", num);
+       console.log("str:", str);
+       console.log("bool:", bool);
+       console.log("obj:", obj);
+
+    </script>
+</body>
+</html>
